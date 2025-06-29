@@ -1,0 +1,38 @@
+﻿<Window x:Class="Laba5.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Laba5"
+        mc:Ignorable="d"
+        Title="Gallows" Height="450" Width="800">
+    <Grid Margin="0,0,0,-6">
+        <Grid.Background>
+            <ImageBrush ImageSource="/images.jpg"/>
+        </Grid.Background>
+        <TextBox x:Name="Input" HorizontalAlignment="Left" Margin="526,247,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220" Height="92" TextChanged="Input_TextChanged"/>
+        <TextBox x:Name="Letters1" HorizontalAlignment="Left" Margin="60,161,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="209" Height="44"  IsEnabled="False"/>
+        <Button x:Name="Start" Content="Start" HorizontalAlignment="Left" Margin="280,0,0,0" VerticalAlignment="Top" Height="30" Width="180" Click="Start_Click"/>
+        <Image x:Name="OutputImage" HorizontalAlignment="Left" Height="122" Margin="526,85,0,0" VerticalAlignment="Top" Width="239"/>
+        <ComboBox Name="phonesList" Height="28" VerticalAlignment="Top" Margin="0,0,674,0"  Background="#FF680EB7" BorderBrush="#FF7C0E9E">
+            <TextBlock>Animals</TextBlock>
+            <TextBlock>Names</TextBlock>
+            <TextBlock>Themes of LP</TextBlock>
+        </ComboBox>
+        <Button x:Name="Check" Content="Check" HorizontalAlignment="Left" Margin="546,357,0,0" VerticalAlignment="Top" Height="30" Width="180" Click="Check_Click"/>
+        <Label Content="Already used letters:" HorizontalAlignment="Left" Margin="302,114,0,0" VerticalAlignment="Top" Height="31" Width="175"/>
+        <TextBox x:Name="Garbage" HorizontalAlignment="Center" Margin="0,161,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="194" Height="44" IsEnabled="False"/>
+        <Button x:Name="Exit" Content="Exit" HorizontalAlignment="Left" Margin="47,362,0,0" VerticalAlignment="Top" Width="67" Click="Exit_Click"/>
+        <Button x:Name="reference" HorizontalAlignment="Left" Margin="724,0,0,0" VerticalAlignment="Top" Height="52" Width="76" Click="reference_Click" >
+            <Button.Background>
+                <ImageBrush ImageSource="/png-transparent-question-mark-question-mark-graphic-blue-text-presentation.png"/>
+            </Button.Background>
+        </Button>
+        <Label Content="&lt;- Choose theme" HorizontalAlignment="Left" Margin="168,2,0,0" VerticalAlignment="Top" Width="124"/>
+        <Label Content="Guess the word" HorizontalAlignment="Left" Margin="60,114,0,0" VerticalAlignment="Top" Width="108"/>
+        <Label Content="Put letters here -&gt;" HorizontalAlignment="Left" Margin="400,268,0,0" VerticalAlignment="Top" Height="25" Width="121"/>
+        <Label Content="Word lenght" HorizontalAlignment="Left" Margin="17,260,0,0" VerticalAlignment="Top" Height="31" Width="90"/>
+        <TextBox x:Name="Le" HorizontalAlignment="Left" Height="23" Margin="112,268,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+</Window>
